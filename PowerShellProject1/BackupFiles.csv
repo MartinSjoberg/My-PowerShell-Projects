@@ -1,0 +1,4 @@
+Source,Destination,SourceRetentionTime
+"\\servername\BackupArea\","\\servername\destination",0
+"\\servername\BackupArea\","\\servername\destination",0
+"\\servername\BackupArea\","\\servername\destination",0
