@@ -1,4 +1,4 @@
-# Connect vcenter  SNAPSHOT 2
+
 Connect-VIServer vcenter
 
 # Skapa snapshot
