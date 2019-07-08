@@ -1,10 +1,9 @@
 
-$computers = Get-DbaCmsRegServer  server1353 -group active 
-Find-DbaUserObject -SqlInstance $computers -Pattern 'VT\bjornasmanadmin' | Out-GridView
+$computers = Get-DbaRegServer  serverCMS -group active 
+Test-DbaPowerPlan -ComputerName $computers | Out-GridView
 
-
-
+# Get What sql related services are running... make it into another file
 # Get-DbaService -ComputerName $computers| Out-GridView
 
-# Test-DbaPowerPlan -ComputerName $computers | Out-GridView
-# Get-DbaCmsRegServer  server1353 -group active | ForEach-Object { [pscustomobject]@{ComputerName = $PSItem} }  | Test-DbaPowerPlan
+# Alternative way
+# Get-DbaRegServer serverCMS -group active | ForEach-Object { [pscustomobject]@{ComputerName = $PSItem} }  | Test-DbaPowerPlan
