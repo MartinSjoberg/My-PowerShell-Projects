@@ -3,7 +3,7 @@
 # Script Information
 # Title: BackupFiles.ps1 - This is subject to change to make it more general.
 # Version: 0.99
-# Author: Martin Sjöberg Empir AB
+# Author: Martin Sjöberg
 # Originally created: 20120917
 # Description: Copies files from source to destination with robocopy and send email depending on outcome. Also deletes files and folders from source older than definable threshold.
 # Known issues: If the user running the script doesn't have rights to delete the folder/files that should be deleted according to retentiontime the script hangs :-/ Workaround: give user more rights, or set retentiontime to 0.
@@ -14,8 +14,8 @@
 # Import info about sourcepath, destinationpath and retentiontime
 $CSVFile = Import-Csv "BackupFiles.csv"
 $LogFilePath = ".\"
-$From = "martin.sjoberg@empir.se"
-$To = "martin.sjoberg@empir.se"
+$From = "guldhjartats@hotmail.com"
+$To = "guldhjartats@hotmail.com"
 $SMTPServer = "smtp.empir.se"
 $SMTPPort = "25"
 <#### End Config ####>
